@@ -1,0 +1,229 @@
+body{
+    background-color: #ebebbf;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+header{
+    background-color: #19222a;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    top: 0;
+    left: 0;
+    color: white;
+}
+header h1{
+    display: inline;
+    color: #ffffff;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+}
+form input{
+    width:80%;
+}
+form input[type="date"]{
+    width:30%;
+    max-width: 100px;
+}
+form input[type="color"]{
+    width: 30%;
+}
+.posit{
+    color: #19222a;
+    position: absolute;
+    width: 30%;
+    padding: 2%;
+    background-color: #eeee1d;
+    font-size: 80%;
+    border-top-right-radius: 10%;
+    border: solid 1px #19222a;
+    box-shadow:#19222aa1 10px 10px;
+    z-index: -3;
+}
+.posit:hover{
+    z-index: 3;  
+}
+.posit .titulo{
+    font-weight: bold;
+    text-align: center;
+}
+.posit .texto{
+    text-align: justify;
+}
+.posit .fecha{
+    font-size: 100%;
+    font-weight: bold;
+    text-align: right;
+}
+#protector{
+    background-color:#19222a92;
+    position: absolute;
+    top: 0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+#sidebar-nav {
+    position: fixed;
+    width: 13em;
+    background-color: #19222a;
+    height: 100%;
+    overflow: auto;
+    padding-bottom: 6em;
+    overflow: hidden;
+    z-index: 100;
+}
+#sidebar-nav ul {
+    list-style: none;
+    display: block;
+    padding: 0;
+    margin: 0;
+}
+#asignaturaName{
+    display: inline;
+}
+#sidebar-nav li {
+    margin-left: 0;
+    padding-left: 0;
+    display: inline-block;
+    width: 100%;
+}
+#sidebar-nav li a {
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 1em;
+    padding: 1.05em 1em;
+    position: relative;
+    display: block;
+    text-decoration: none;
+}
+#sidebar-nav li a:hover {
+    background-color: rgba(0, 0, 0, 0.9);
+}
+#sidebar-nav i {
+    font-size: 1.8em;
+    padding-right: 0.5em;
+    width: 9em;
+    display: inline;
+    vertical-align: middle;
+  }
+#menu-header{
+    display: inline;
+    color: #ffffff;
+    font-size:30px;
+    font-weight: bold;
+    padding: 0;
+    margin: 2%;
+}
+#menu-header button{
+    background-color: #19222a;
+    color: #ffffff;
+    font-size: 30px;
+    font-weight: bold;
+    border: none;
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
+}
+#menu-header button:hover{
+    color: black;
+}
+#editModal{
+    position: absolute;
+    width: 40%;
+    left: 35%;
+    top: 30%;
+    background-color: #19222a;
+    z-index: -2;
+    font-size: 80%;
+    border-top-right-radius: 10%;
+    box-shadow:#19222aa1 10px 10px;
+}
+#editModal form{
+    width:100%;
+    text-align: center;
+}
+#editModal form{
+    color: white;
+}
+#editModal #editModal-title{
+    color: white;
+    font-weight: bold;
+    text-align: center;
+}
+#editModal input[type="submit"]{
+    background-color: #19222a;
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+    border: none;
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
+    
+}
+#addPosit-button{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 10%;
+    height: 10%;
+    background-color: #19222a;
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    border: none;
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
+    z-index: 100;
+}
+#deletePosit-button img{
+    width: 80%;
+    height: 80%;
+}
+#deletePosit-button{
+    position: fixed;
+    background-color: #19222a;
+    bottom: 0;
+    right: 0;
+    width: 10%;
+    height: 10%;
+    border: none;
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
+    z-index: 100;
+    border-radius: 25%;
+    margin: 5%;
+}
+@media (min-width:800px){
+    #menu-header{
+        display: none;
+    }
+    #sidebar-nav {
+        display: block;
+    }
+    #asignaturaName{
+        padding-left: 50%;
+    }
+    #protector{
+        display:none;
+    }
+    #deletePosit-button{
+        width: 5%;
+    }
+
+}
+@media (max-width:800px){
+    #addPosit-button{
+        border-radius: 25%;
+        margin: 5%;
+    }
+}
+/* parte de edición para ayudar a mostrar el diseño */
+#editModal {
+    display: none;
+}

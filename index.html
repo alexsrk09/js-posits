@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="css.css">
+  <link rel="stylesheet" href="https://necolas.github.io/normalize.css">
+  <script src="show nav.js"></script>
+  <script src="asignaturas.js"></script>
+  <script src="posits.js"></script>
+</head>
+
+<body>
+  <header>
+    <h1>
+      <p id="menu-header" ><button>☰</button>
+      <p id="asignaturaName">Aguacate</p>
+    </h1>
+  </header>
+  <aside>
+    <nav id="sidebar-nav">
+      <ul id="asignaturas">
+      </ul>
+    </nav>
+  </aside>
+  <div id="protector"></div>
+  <section id="editModal">
+    <h2 id="editModal-title">Edit</h2>
+    <form>
+      <label for="name">Nombre</label><br>
+      <input type="text" name="name"><br>
+      <label for="description">Descripcion</label><br>
+      <input type="text" name="description"><br>
+      <label for="date">Fecha</label><br>
+      <input type="date" name="date"><br>
+      <label for="asignatura">Asignatura</label><br>
+      <input type="text" name="asignatura"><br>
+      <label for="color">Color</label><br>
+      <input type="color" name="color"><br>
+      <input type="submit" value="Guardar">
+    </form>
+  </section>
+  <section if="bottom">
+      <button id="addPosit-button">+</button>
+      <button id="deletePosit-button"><img src="papelera-de-reciclaje.png"></button>
+  </section>
+</body>
+</html>
